@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<!-- 表单，在页面中，和用户交互的部分form
+		 属性：
+		 action:表单数据发送的服务器程序的地址
+		 method：提交方式 get表单的数据，放在浏览器的地址栏上进行发送?name=value&name=value 
+						post 表单的数据，数据格式键值对name=value&name=value 不会放在地址栏，安全，没有长度限制，适合提交大数据
+		 enctype：-->
+		 <form action="#" method="get" enctype="">此处内容被表单收集，提交到服务器
+		 <hr />
+		 <!-- placeholder 文本框中的提示
+		  name="文本框定义名字" 和javaweb技术有关
+		  value="default value in form"
+		  type="radio" 单选按钮
+		  type="checkbox" 多选
+		  type="file" 上传文件
+		  type="reset" reset重制
+		  type="button" 按钮需配合JS使用
+		  type="image" 图片按钮
+		  <select>
+			<option> 
+			默认选项selected-->
+		 用户名:<input type="text" placeholder="请输入用户名" name="user"/>
+		 密码:<input type="password" />
+		 好<input type="radio" name="commment" checked="checked"/> 极好<input type="radio" /><br />
+		 爱好:<input type="checkbox" name="hobby"/>吃 <input type="checkbox" name="hobby"/>喝 <input type="checkbox" name="hobby"/>玩<br />
+		 <input type="file" /><br />
+		 <input type="button" value="try to click"/>
+		 <input type="submit" value="commit file to server: sign up"/>
+		 <input type="image" src="../img/m.jpg" width="10%" height="10%" align="right"/><hr />
+		 选择省份<select>
+			 <option>北京市</option>
+			 <option>上海市</option>
+			 <option>重庆市</option>
+			 <option selected="selected">无锡市</option>
+		 </select><br />
+		 <textarea>输入</textarea>
+		 </form> 
+	</body>
+</html>
